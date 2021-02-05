@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchTypesContainer .mapStateToProps returns the correctly mapped props 1`] = `
+Object {
+  "hasFailed": false,
+  "isFetching": false,
+  "searchType": "overnight-boarding",
+  "searchTypes": Array [
+    "overnight-boarding",
+  ],
+}
+`;

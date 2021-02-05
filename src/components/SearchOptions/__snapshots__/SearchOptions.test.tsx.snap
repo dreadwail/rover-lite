@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchOptions when fetching displays a loading spinner 1`] = `<Spinner />`;
+
+exports[`SearchOptions when fetching failed displays an error message with an option to reload 1`] = `<ReloadableFailure />`;
+
+exports[`SearchOptions when fetching succeeded renders correctly 1`] = `
+<Fragment>
+  <SearchOptionsCategory
+    categoryId="service_details"
+    displayName="Service Details"
+    key="service_details"
+    rank={1}
+  >
+    <SearchOptionsSet
+      inputs={Object {}}
+      onSearchFieldChanged={[MockFunction onSearchFieldChanged]}
+    />
+  </SearchOptionsCategory>
+  <SearchOptionsCategory
+    categoryId="service_details"
+    displayName="Service Details"
+    key="service_details"
+    rank={2}
+  >
+    <SearchOptionsSet
+      inputs={Object {}}
+      onSearchFieldChanged={[MockFunction onSearchFieldChanged]}
+    />
+  </SearchOptionsCategory>
+</Fragment>
+`;

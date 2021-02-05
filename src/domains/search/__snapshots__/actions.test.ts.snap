@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`search actions searchFieldChanged dispatches the correct actions 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "key": "test-key",
+      "value": "test-value",
+    },
+    "type": "SEARCH.FIELD_CHANGED",
+  },
+]
+`;
+
+exports[`search actions searchFieldChanged with a end_date already in the store when trying to change start_date to be less than end_date dispatches a field changed action 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "key": "start_date",
+      "value": 1970-01-01T08:00:00.000Z,
+    },
+    "type": "SEARCH.FIELD_CHANGED",
+  },
+]
+`;
+
+exports[`search actions searchFieldChanged with a start_date already in the store when trying to change end_date to be greater than start_date dispatches a field changed action 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "key": "end_date",
+      "value": 2050-01-01T08:00:00.000Z,
+    },
+    "type": "SEARCH.FIELD_CHANGED",
+  },
+]
+`;
+
+exports[`search actions searchTypeChanged creates the correct action 1`] = `
+Object {
+  "payload": "overnight-boarding",
+  "type": "SEARCH.TYPE_CHANGED",
+}
+`;

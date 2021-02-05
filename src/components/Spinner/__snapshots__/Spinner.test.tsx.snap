@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner renders correctly 1`] = `
+<div
+  className="d-flex justify-content-center m-5"
+>
+  <div
+    className="spinner-border text-primary"
+    role="status"
+    style={Object {}}
+  >
+    <span
+      className="sr-only"
+    >
+      Loading...
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Spinner when large sized renders correctly 1`] = `
+<div
+  className="d-flex justify-content-center m-5"
+>
+  <div
+    className="spinner-border text-primary"
+    role="status"
+    style={
+      Object {
+        "height": "5rem",
+        "width": "5rem",
+      }
+    }
+  >
+    <span
+      className="sr-only"
+    >
+      Loading...
+    </span>
+  </div>
+</div>
+`;

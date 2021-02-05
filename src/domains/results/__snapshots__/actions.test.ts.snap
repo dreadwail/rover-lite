@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`results actions .fetchResults when the api call fails dispatches the correct actions 1`] = `
+Array [
+  Object {
+    "type": "FETCH_RESULTS.PENDING",
+  },
+  Object {
+    "error": true,
+    "payload": Object {
+      "error": [Error: bang],
+    },
+    "type": "FETCH_RESULTS.REJECTED",
+  },
+]
+`;
+
+exports[`results actions .fetchResults when the api call succeeds dispatches the correct actions 1`] = `
+Array [
+  Object {
+    "type": "FETCH_RESULTS.PENDING",
+  },
+  Object {
+    "payload": Array [
+      Object {
+        "badges": Array [],
+        "city": "Seattle",
+        "currencySymbol": "$",
+        "featuredReview": "j",
+        "name": "d",
+        "neighborhood": "Ballard",
+        "price": 42,
+        "priceUnit": "night",
+        "rank": 0,
+        "ratingAverage": 4.8,
+        "repeatClientCount": 5,
+        "reviewCount": 2,
+        "state": "WA",
+        "tagline": "g",
+        "thumbnailUrl": "e",
+        "webUrl": "f",
+        "zip": "98117",
+      },
+    ],
+    "type": "FETCH_RESULTS.FULFILLED",
+  },
+]
+`;

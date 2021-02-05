@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReloadableFailure renders correctly 1`] = `
+<div
+  className="text-center"
+>
+  <p
+    className="text-danger"
+  >
+    An error occurred. Please try again in a moment.
+  </p>
+  <button
+    className="btn btn-link"
+    onClick={[Function]}
+    type="button"
+  >
+    Click to reload.
+  </button>
+</div>
+`;

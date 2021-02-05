@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchOptionsContainer .mapStateToProps returns the correctly mapped props 1`] = `
+Object {
+  "hasFailed": false,
+  "inputs": Object {
+    "end_date": "test-value-2",
+    "start_date": "test-value-1",
+    "test_key": "test-value-3",
+  },
+  "isFetching": false,
+  "isSearchTypesLoaded": false,
+  "optionsByCategoryId": Object {
+    "service_details": Object {
+      "end_date": Object {
+        "category": Object {
+          "categoryId": "service_details",
+          "displayName": "Service Details",
+          "rank": 2,
+        },
+        "helpText": "The date of the pick-up from the sitter's location",
+        "label": "Pick Up",
+        "rank": 2,
+        "required": false,
+        "type": "date",
+      },
+      "start_date": Object {
+        "category": Object {
+          "categoryId": "service_details",
+          "displayName": "Service Details",
+          "rank": 1,
+        },
+        "helpText": "The date of the drop-off at the sitter's location",
+        "label": "Drop Off",
+        "rank": 1,
+        "required": false,
+        "type": "date",
+      },
+    },
+  },
+  "rankedCategories": Array [
+    Object {
+      "categoryId": "service_details",
+      "displayName": "Service Details",
+      "rank": 2,
+    },
+  ],
+  "searchType": "overnight-boarding",
+}
+`;

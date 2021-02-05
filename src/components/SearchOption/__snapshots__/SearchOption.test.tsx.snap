@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchOption with a boolean option renders correctly 1`] = `
+<SearchOptionBoolean
+  onChange={[MockFunction onChange]}
+  option={
+    Object {
+      "category": Object {
+        "categoryId": "test-integer-category-id",
+        "displayName": "Test Integer Category",
+        "rank": 0,
+      },
+      "label": "test-integer-label",
+      "rank": 0,
+      "required": false,
+      "type": "boolean",
+    }
+  }
+  optionKey="test-option-key"
+  value={true}
+/>
+`;
+
+exports[`SearchOption with a choice option renders correctly 1`] = `
+<SearchOptionChoice
+  onChange={[MockFunction onChange]}
+  option={
+    Object {
+      "category": Object {
+        "categoryId": "test-choice-category-id",
+        "displayName": "Test Choice Category",
+        "rank": 0,
+      },
+      "choices": Array [
+        Object {
+          "displayName": "Test Choice 1",
+          "value": "test-choice-1",
+        },
+        Object {
+          "displayName": "Test Choice 2",
+          "value": "test-choice-2",
+        },
+      ],
+      "label": "test-choice-label",
+      "rank": 0,
+      "required": false,
+      "type": "choice",
+    }
+  }
+  optionKey="test-option-key"
+  value="test-choice-1"
+/>
+`;
+
+exports[`SearchOption with a date option renders correctly 1`] = `
+<SearchOptionDate
+  onChange={[MockFunction onChange]}
+  option={
+    Object {
+      "category": Object {
+        "categoryId": "test-date-category-id",
+        "displayName": "Test Date Category",
+        "rank": 0,
+      },
+      "label": "test-date-label",
+      "rank": 0,
+      "required": false,
+      "type": "date",
+    }
+  }
+  optionKey="test-option-key"
+  value={1970-01-01T08:00:00.000Z}
+/>
+`;
+
+exports[`SearchOption with a multiple choice option renders correctly 1`] = `
+<SearchOptionMultipleChoice
+  onChange={[MockFunction onChange]}
+  option={
+    Object {
+      "category": Object {
+        "categoryId": "test-multiple-choice-category-id",
+        "displayName": "Test Multiple Choice Category",
+        "rank": 0,
+      },
+      "choices": Array [
+        Object {
+          "displayName": "Test Choice 1",
+          "value": "test-choice-1",
+        },
+        Object {
+          "displayName": "Test Choice 2",
+          "value": "test-choice-2",
+        },
+      ],
+      "label": "test-multiple-choice-label",
+      "rank": 0,
+      "required": false,
+      "type": "multiple choice",
+    }
+  }
+  optionKey="test-option-key"
+  value={
+    Array [
+      "test-choice-1",
+      "test-choice-2",
+    ]
+  }
+/>
+`;
+
+exports[`SearchOption with an integer option renders correctly 1`] = `
+<SearchOptionInteger
+  onChange={[MockFunction onChange]}
+  option={
+    Object {
+      "category": Object {
+        "categoryId": "test-integer-category-id",
+        "displayName": "Test Integer Category",
+        "rank": 0,
+      },
+      "label": "test-integer-label",
+      "maxValue": 50,
+      "minValue": 0,
+      "rank": 0,
+      "required": false,
+      "type": "integer",
+    }
+  }
+  optionKey="test-option-key"
+  value={42}
+/>
+`;

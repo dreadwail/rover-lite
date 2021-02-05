@@ -1,0 +1,117 @@
+{
+  "name": "rover-lite",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "lodash.debounce": "^4.0.8",
+    "promise-polyfill": "^8.1.0",
+    "rc-slider": "^8.6.9",
+    "react": "^16.8.6",
+    "react-datepicker": "^2.5.0",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.3",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "scripts": {
+    "start:server": "react-scripts start",
+    "start": "run-s test:lint start:server",
+    "clean:jest": "shx rm -rf .jest",
+    "clean:coverage": "shx rm -rf \"coverage/!(.keep)\"",
+    "clean:dist": "shx rm -rf build",
+    "clean:node_modules": "shx rm -rf node_modules",
+    "clean": "run-p clean:*",
+    "build:bundle": "react-scripts build",
+    "build": "run-s clean:dist test build:*",
+    "test:lint": "tslint --format verbose --project tsconfig.json",
+    "test:coverage": "react-scripts test --coverage --watchAll=false",
+    "test:watch": "react-scripts test",
+    "test": "run-s test:lint test:coverage"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/node_modules/",
+      "!**/index.{js,jsx,ts,tsx}",
+      "!**/types.ts",
+      "!src/setupTests.ts",
+      "!src/react-app-env.d.ts",
+      "!src/state/store.ts",
+      "!src/state/mockState.ts",
+      "!src/state/mockStore.ts"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "coverageReporters": [
+      "text",
+      "text-summary",
+      "html"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^4.3.0",
+    "@types/enzyme": "^3.9.1",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/enzyme-to-json": "^1.5.3",
+    "@types/jest": "^24.0.12",
+    "@types/jest-matcher-utils": "^21.0.2",
+    "@types/jsdom": "^12.2.3",
+    "@types/lodash.debounce": "^4.0.6",
+    "@types/node": "12.0.0",
+    "@types/rc-slider": "^8.6.3",
+    "@types/react": "16.8.17",
+    "@types/react-datepicker": "^2.3.0",
+    "@types/react-dom": "16.8.4",
+    "@types/react-redux": "^7.0.8",
+    "@types/react-test-renderer": "^16.8.1",
+    "@types/redux-mock-store": "^1.0.1",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "enzyme-to-json": "^3.3.5",
+    "jest": "24.7.1",
+    "jest-environment-jsdom": "^24.7.0",
+    "jest-environment-jsdom-global": "^1.2.0",
+    "jest-enzyme": "^7.0.2",
+    "jest-matcher-utils": "^24.7.0",
+    "jsdom": "^15.0.0",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "react-scripts": "3.0.1",
+    "react-test-renderer": "^16.8.6",
+    "redux-mock-store": "^1.5.3",
+    "shx": "^0.3.2",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.16.0",
+    "tslint-consistent-codestyle": "^1.15.1",
+    "tslint-microsoft-contrib": "^6.1.1",
+    "tslint-react": "^4.0.0",
+    "typescript": "3.4.5"
+  }
+}

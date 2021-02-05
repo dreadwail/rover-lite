@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchOptionsSet with options renders correctly 1`] = `
+<Fragment>
+  <SearchOption
+    key="test_key"
+    onChange={[Function]}
+    option={
+      Object {
+        "category": Object {
+          "categoryId": "test-category-id",
+          "displayName": "Test Category",
+          "rank": 0,
+        },
+        "label": "test-label",
+        "maxValue": 50,
+        "minValue": 0,
+        "rank": 0,
+        "required": false,
+        "type": "integer",
+      }
+    }
+    optionKey="test_key"
+    value={42}
+  />
+</Fragment>
+`;

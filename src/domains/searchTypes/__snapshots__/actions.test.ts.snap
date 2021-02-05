@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`search types actions .fetchSearchTypes when the api call fails dispatches the correct actions 1`] = `
+Array [
+  Object {
+    "type": "FETCH_SEARCH_TYPES.PENDING",
+  },
+  Object {
+    "error": true,
+    "payload": Object {
+      "error": [Error: bang],
+    },
+    "type": "FETCH_SEARCH_TYPES.REJECTED",
+  },
+]
+`;
+
+exports[`search types actions .fetchSearchTypes when the api call succeeds dispatches the correct actions 1`] = `
+Array [
+  Object {
+    "type": "FETCH_SEARCH_TYPES.PENDING",
+  },
+  Object {
+    "payload": Object {
+      "overnight-boarding": "https://www.rover.com/api/v3/search/overnight-boarding/",
+    },
+    "type": "FETCH_SEARCH_TYPES.FULFILLED",
+  },
+]
+`;

@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`search options reducer when fetching search options fails returns the correct state 1`] = `
+Object {
+  "hasFailed": true,
+  "isFetching": false,
+  "options": Object {},
+}
+`;
+
+exports[`search options reducer when fetching search options starts returns the correct state 1`] = `
+Object {
+  "hasFailed": false,
+  "isFetching": true,
+  "options": Object {},
+}
+`;
+
+exports[`search options reducer when fetching search options succeeds returns the correct state 1`] = `
+Object {
+  "hasFailed": false,
+  "isFetching": false,
+  "options": Object {
+    "test-option-1": Object {
+      "category": Object {
+        "categoryId": "service_details",
+        "displayName": "Service Details",
+        "rank": 42,
+      },
+      "helpText": "",
+      "label": "Test Option 1",
+      "rank": 128,
+      "required": true,
+      "type": "integer",
+    },
+    "test-option-2": Object {
+      "category": Object {
+        "categoryId": "service_details",
+        "displayName": "Service Details",
+        "rank": 84,
+      },
+      "helpText": "",
+      "label": "Test Option 2",
+      "rank": 123,
+      "required": true,
+      "type": "boolean",
+    },
+  },
+}
+`;
+
+exports[`search options reducer when passed no previous state returns the correct initial state 1`] = `
+Object {
+  "hasFailed": false,
+  "isFetching": false,
+  "options": Object {},
+}
+`;
+
+exports[`search options reducer when the search type changes returns the initial state and the new search type 1`] = `
+Object {
+  "hasFailed": false,
+  "isFetching": false,
+  "options": Object {},
+}
+`;

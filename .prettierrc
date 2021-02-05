@@ -1,0 +1,26 @@
+{
+  "parser": "typescript",
+  "printWidth": 100,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "overrides": [
+    {
+      "files": ["*.css"],
+      "options": {
+        "parser": "css"
+      }
+    },
+    {
+      "files": ["*.json", ".*rc"],
+      "options": {
+        "parser": "json"
+      }
+    },
+    {
+      "files": ["*.md"],
+      "options": {
+        "parser": "markdown"
+      }
+    }
+  ]
+}

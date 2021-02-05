@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<nav
+  className="navbar fixed-top navbar-light bg-white border-bottom"
+>
+  <a
+    className="navbar-brand mr-auto ml-3"
+    href="/"
+  >
+    <img
+      alt="Rover"
+      src="rover.png"
+      width="100"
+    />
+  </a>
+  <ExternalLink
+    className="nav-item nav-link"
+    href="https://www.rover.com/become-a-sitter/"
+  >
+    Become a Sitter
+  </ExternalLink>
+  <ExternalLink
+    className="nav-item nav-link"
+    href="https://www.rover.com/help/"
+  >
+    Help
+  </ExternalLink>
+</nav>
+`;

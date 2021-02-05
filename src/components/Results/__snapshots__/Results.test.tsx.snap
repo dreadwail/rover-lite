@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Results when failed renders correctly 1`] = `<ReloadableFailure />`;
+
+exports[`Results when fetching renders correctly 1`] = `
+<Spinner
+  isLargeSize={true}
+/>
+`;
+
+exports[`Results when the results are not stale and not fetching renders correctly 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-sm"
+  >
+    <ul
+      className="list-group list-group-flush"
+    >
+      <li
+        className="list-group-item"
+        key="https://www.rover.com/members/madison-s-2-pet-loversfenced-yard-in-ballard/"
+      >
+        <Result
+          listing={
+            Object {
+              "badges": Array [
+                Object {
+                  "content": "This sitter has successfully passed an enhanced <a href=\\"/background-checks/\\">background check</a> by a third party provider.",
+                  "imageUrl": "//dt0499hd9onpe.cloudfront.net/badges/verified-enhanced-background-check/icons/icon_21e9a29c.png",
+                  "title": "Verified Enhanced Background Check",
+                },
+                Object {
+                  "content": "This sitter has completed <a href=\\"https://www.rover.com/sitter-training\\">Rover 101</a> for pet care best practices.",
+                  "imageUrl": "//dt0499hd9onpe.cloudfront.net/badges/rover-training-graduate/icons/icon_1357faa9.png",
+                  "title": "Rover 101",
+                },
+              ],
+              "city": "Seattle",
+              "currencySymbol": "$",
+              "featuredReview": "Best dog sitter I've ever used. Easy-going and accommodating, was eager to figure out schedule and communication. My dog was so happy with them, she forgot I was gone. I'll be using them every time so long as they're available!",
+              "name": "Madison",
+              "neighborhood": "Loyal Heights",
+              "price": 45,
+              "priceUnit": "night",
+              "rank": 1,
+              "ratingAverage": 5,
+              "repeatClientCount": 6,
+              "reviewCount": 11,
+              "state": "WA",
+              "tagline": "2 pet lovers+fenced yard in Ballard",
+              "thumbnailUrl": "https://rover-com.imgix.net/images/people/3gmEo9Rg/blrepvpeti/original.png?crop=facecenter&fit=crop&h=200&ixlib=python-1.2.0&w=200",
+              "webUrl": "https://www.rover.com/members/madison-s-2-pet-loversfenced-yard-in-ballard/",
+              "zip": "98117",
+            }
+          }
+        />
+      </li>
+      <li
+        className="list-group-item"
+        key="https://www.rover.com/members/angie-b-i-absolutely-love-dogs/"
+      >
+        <Result
+          listing={
+            Object {
+              "badges": Array [
+                Object {
+                  "content": "This sitter has successfully passed an enhanced <a href=\\"/background-checks/\\">background check</a> by a third party provider.",
+                  "imageUrl": "//dt0499hd9onpe.cloudfront.net/badges/verified-enhanced-background-check/icons/icon_21e9a29c.png",
+                  "title": "Verified Enhanced Background Check",
+                },
+              ],
+              "city": "Seattle",
+              "currencySymbol": "$",
+              "featuredReview": "We boarded our Havanese, Ryley, with Angie, while we were away for a long weekend.  We could not have been more pleased.  Angie is caring and considerate, responsible and prompt with all communications.  And all indications are that Ryley had a wonder time with Angie, and visa-versa, which is exactly what we had hoped!",
+              "name": "Angie",
+              "neighborhood": "Olympic Manor",
+              "price": 35,
+              "priceUnit": "night",
+              "rank": 2,
+              "ratingAverage": 5,
+              "repeatClientCount": 2,
+              "reviewCount": 9,
+              "state": "WA",
+              "tagline": "I absolutely love dogs!!!",
+              "thumbnailUrl": "https://rover-com.imgix.net/images/people/g45DYroQ/xuouqxoook/original.jpg?crop=facecenter&fit=crop&h=200&ixlib=python-1.2.0&w=200",
+              "webUrl": "https://www.rover.com/members/angie-b-i-absolutely-love-dogs/",
+              "zip": "98117",
+            }
+          }
+        />
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Results when the results are not stale but fetching renders correctly 1`] = `
+<Spinner
+  isLargeSize={true}
+/>
+`;
+
+exports[`Results when the results are stale and not fetching renders correctly 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-sm"
+  >
+    <ul
+      className="list-group list-group-flush"
+    >
+      <li
+        className="list-group-item"
+        key="https://www.rover.com/members/madison-s-2-pet-loversfenced-yard-in-ballard/"
+      >
+        <Result
+          listing={
+            Object {
+              "badges": Array [
+                Object {
+                  "content": "This sitter has successfully passed an enhanced <a href=\\"/background-checks/\\">background check</a> by a third party provider.",
+                  "imageUrl": "//dt0499hd9onpe.cloudfront.net/badges/verified-enhanced-background-check/icons/icon_21e9a29c.png",
+                  "title": "Verified Enhanced Background Check",
+                },
+                Object {
+                  "content": "This sitter has completed <a href=\\"https://www.rover.com/sitter-training\\">Rover 101</a> for pet care best practices.",
+                  "imageUrl": "//dt0499hd9onpe.cloudfront.net/badges/rover-training-graduate/icons/icon_1357faa9.png",
+                  "title": "Rover 101",
+                },
+              ],
+              "city": "Seattle",
+              "currencySymbol": "$",
+              "featuredReview": "Best dog sitter I've ever used. Easy-going and accommodating, was eager to figure out schedule and communication. My dog was so happy with them, she forgot I was gone. I'll be using them every time so long as they're available!",
+              "name": "Madison",
+              "neighborhood": "Loyal Heights",
+              "price": 45,
+              "priceUnit": "night",
+              "rank": 1,
+              "ratingAverage": 5,
+              "repeatClientCount": 6,
+              "reviewCount": 11,
+              "state": "WA",
+              "tagline": "2 pet lovers+fenced yard in Ballard",
+              "thumbnailUrl": "https://rover-com.imgix.net/images/people/3gmEo9Rg/blrepvpeti/original.png?crop=facecenter&fit=crop&h=200&ixlib=python-1.2.0&w=200",
+              "webUrl": "https://www.rover.com/members/madison-s-2-pet-loversfenced-yard-in-ballard/",
+              "zip": "98117",
+            }
+          }
+        />
+      </li>
+      <li
+        className="list-group-item"
+        key="https://www.rover.com/members/angie-b-i-absolutely-love-dogs/"
+      >
+        <Result
+          listing={
+            Object {
+              "badges": Array [
+                Object {
+                  "content": "This sitter has successfully passed an enhanced <a href=\\"/background-checks/\\">background check</a> by a third party provider.",
+                  "imageUrl": "//dt0499hd9onpe.cloudfront.net/badges/verified-enhanced-background-check/icons/icon_21e9a29c.png",
+                  "title": "Verified Enhanced Background Check",
+                },
+              ],
+              "city": "Seattle",
+              "currencySymbol": "$",
+              "featuredReview": "We boarded our Havanese, Ryley, with Angie, while we were away for a long weekend.  We could not have been more pleased.  Angie is caring and considerate, responsible and prompt with all communications.  And all indications are that Ryley had a wonder time with Angie, and visa-versa, which is exactly what we had hoped!",
+              "name": "Angie",
+              "neighborhood": "Olympic Manor",
+              "price": 35,
+              "priceUnit": "night",
+              "rank": 2,
+              "ratingAverage": 5,
+              "repeatClientCount": 2,
+              "reviewCount": 9,
+              "state": "WA",
+              "tagline": "I absolutely love dogs!!!",
+              "thumbnailUrl": "https://rover-com.imgix.net/images/people/g45DYroQ/xuouqxoook/original.jpg?crop=facecenter&fit=crop&h=200&ixlib=python-1.2.0&w=200",
+              "webUrl": "https://www.rover.com/members/angie-b-i-absolutely-love-dogs/",
+              "zip": "98117",
+            }
+          }
+        />
+      </li>
+    </ul>
+  </div>
+</div>
+`;

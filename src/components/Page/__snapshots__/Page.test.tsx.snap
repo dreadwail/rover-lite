@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page renders correctly 1`] = `
+<div
+  className="container-fluid"
+>
+  <div
+    className="row border-bottom"
+  >
+    <div
+      className="col-sm"
+    >
+      <Header />
+    </div>
+  </div>
+  <div
+    className="row pt-3"
+    id="main-content"
+  >
+    <div
+      className="col-sm-4 col-md-3"
+    >
+      <Filters />
+    </div>
+    <div
+      className="col-sm-8 col-md-9"
+    >
+      <ConnectFunction />
+    </div>
+  </div>
+</div>
+`;

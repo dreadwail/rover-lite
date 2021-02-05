@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchOptionChoice renders correctly 1`] = `
+<div
+  className="form-group"
+>
+  <label
+    htmlFor="test-option-key"
+  >
+    <small>
+      test-label
+    </small>
+  </label>
+  <div
+    className="form-check"
+    key="test-option-key-test-choice-1"
+  >
+    <input
+      checked={true}
+      className="form-check-input"
+      id="test-option-key-test-choice-1"
+      name="test-option-key"
+      onChange={[Function]}
+      type="radio"
+      value="test-choice-1"
+    />
+    <label
+      className="form-check-label"
+      htmlFor="test-option-key-test-choice-1"
+    >
+      Test Choice 1
+    </label>
+  </div>
+  <div
+    className="form-check"
+    key="test-option-key-test-choice-2"
+  >
+    <input
+      checked={false}
+      className="form-check-input"
+      id="test-option-key-test-choice-2"
+      name="test-option-key"
+      onChange={[Function]}
+      type="radio"
+      value="test-choice-2"
+    />
+    <label
+      className="form-check-label"
+      htmlFor="test-option-key-test-choice-2"
+    >
+      Test Choice 2
+    </label>
+  </div>
+</div>
+`;

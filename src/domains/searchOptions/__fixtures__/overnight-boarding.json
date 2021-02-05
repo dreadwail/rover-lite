@@ -1,0 +1,396 @@
+{
+  "name": "Search Service Type",
+  "description": "",
+  "renders": ["application/json", "text/html"],
+  "parses": ["application/json", "application/x-www-form-urlencoded", "multipart/form-data"],
+  "actions": {
+    "GET": {
+      "start_date": {
+        "type": "date",
+        "required": false,
+        "label": "Start date",
+        "category": "detail",
+        "category_rank": 1,
+        "category_display_name": "Detail",
+        "rank": 1,
+        "icon": "filter-start_date"
+      },
+      "end_date": {
+        "type": "date",
+        "required": false,
+        "label": "End date",
+        "category": "detail",
+        "category_rank": 1,
+        "category_display_name": "Detail",
+        "rank": 2,
+        "icon": "filter-end_date"
+      },
+      "pet_sizes": {
+        "type": "multiple choice",
+        "required": false,
+        "label": "How large is your dog (in lbs)?",
+        "choices": [
+          { "display_name": "0-15", "value": "small", "icon": "pet_sizes-small" },
+          { "display_name": "16-40", "value": "medium", "icon": "pet_sizes-medium" },
+          { "display_name": "41-100", "value": "large", "icon": "pet_sizes-large" },
+          { "display_name": "101+", "value": "giant", "icon": "pet_sizes-giant" }
+        ],
+        "icon": "filter-pet_sizes"
+      },
+      "centerlat": {
+        "type": "decimal",
+        "required": false,
+        "label": "Centerlat",
+        "icon": "filter-centerlat"
+      },
+      "centerlng": {
+        "type": "decimal",
+        "required": false,
+        "label": "Centerlng",
+        "icon": "filter-centerlng"
+      },
+      "minprice": {
+        "type": "integer",
+        "required": false,
+        "label": "Minprice",
+        "category": "detail",
+        "category_rank": 1,
+        "category_display_name": "Detail",
+        "rank": 4,
+        "icon": "filter-minprice"
+      },
+      "maxprice": {
+        "type": "integer",
+        "required": false,
+        "label": "Maxprice",
+        "category": "detail",
+        "category_rank": 1,
+        "category_display_name": "Detail",
+        "rank": 5,
+        "icon": "filter-maxprice"
+      },
+      "minlat": {
+        "type": "decimal",
+        "required": false,
+        "label": "Minlat",
+        "icon": "filter-minlat"
+      },
+      "minlng": {
+        "type": "decimal",
+        "required": false,
+        "label": "Minlng",
+        "icon": "filter-minlng"
+      },
+      "maxlat": {
+        "type": "decimal",
+        "required": false,
+        "label": "Maxlat",
+        "icon": "filter-maxlat"
+      },
+      "maxlng": {
+        "type": "decimal",
+        "required": false,
+        "label": "Maxlng",
+        "icon": "filter-maxlng"
+      },
+      "service_type": {
+        "type": "choice",
+        "required": true,
+        "label": "Service type",
+        "choices": [
+          {
+            "display_name": "Dog Boarding",
+            "value": "overnight-boarding",
+            "icon": "service_type-overnight-boarding"
+          },
+          {
+            "display_name": "House Sitting",
+            "value": "overnight-traveling",
+            "icon": "service_type-overnight-traveling"
+          },
+          {
+            "display_name": "Dog Walking",
+            "value": "dog-walking",
+            "icon": "service_type-dog-walking"
+          },
+          { "display_name": "Drop-In Visits", "value": "drop-in", "icon": "service_type-drop-in" },
+          {
+            "display_name": "Doggy Day Care",
+            "value": "doggy-day-care",
+            "icon": "service_type-doggy-day-care"
+          }
+        ],
+        "icon": "filter-service_type"
+      },
+      "residence_preference": {
+        "type": "choice",
+        "required": false,
+        "label": "Residence preference",
+        "choices": [
+          { "display_name": "houses", "value": "houses", "icon": "residence_preference-houses" },
+          {
+            "display_name": "apartments",
+            "value": "apartments",
+            "icon": "residence_preference-apartments"
+          },
+          { "display_name": "no_pref", "value": "no_pref", "icon": "residence_preference-no_pref" }
+        ],
+        "icon": "filter-residence_preference"
+      },
+      "dog_preference": {
+        "type": "choice",
+        "required": false,
+        "label": "Dog preference",
+        "choices": [
+          {
+            "display_name": "no_other_dogs",
+            "value": "no_other_dogs",
+            "icon": "dog_preference-no_other_dogs"
+          },
+          {
+            "display_name": "other_dogs",
+            "value": "other_dogs",
+            "icon": "dog_preference-other_dogs"
+          },
+          { "display_name": "no_pref", "value": "no_pref", "icon": "dog_preference-no_pref" }
+        ],
+        "icon": "filter-dog_preference"
+      },
+      "page": { "type": "integer", "required": false, "label": "Page", "icon": "filter-page" },
+      "fulltime_availability": {
+        "category": "daytime_availability",
+        "category_rank": 2,
+        "icon": "filter-fulltime_availability",
+        "category_display_name": "Daytime Availability",
+        "required": false,
+        "type": "boolean",
+        "rank": 1,
+        "label": "Sitter is home full-time"
+      },
+      "accepts_only_one_client": {
+        "category": "pets_in_the_home",
+        "category_rank": 5,
+        "icon": "filter-accepts_only_one_client",
+        "category_display_name": "Pets in the home",
+        "required": false,
+        "type": "boolean",
+        "label": "Accepts only one client at a time"
+      },
+      "person_does_not_have_dogs": {
+        "category": "pets_in_the_home",
+        "category_rank": 5,
+        "icon": "filter-person_does_not_have_dogs",
+        "category_display_name": "Pets in the home",
+        "required": false,
+        "type": "boolean",
+        "rank": 1,
+        "label": "Doesn't own a dog"
+      },
+      "no_cats": {
+        "category": "pets_in_the_home",
+        "category_rank": 5,
+        "icon": "filter-no_cats",
+        "category_display_name": "Pets in the home",
+        "required": false,
+        "type": "boolean",
+        "rank": 2,
+        "label": "Doesn't own a cat"
+      },
+      "no_caged_pets": {
+        "category": "pets_in_the_home",
+        "category_rank": 5,
+        "icon": "filter-no_caged_pets",
+        "category_display_name": "Pets in the home",
+        "required": false,
+        "type": "boolean",
+        "rank": 3,
+        "label": "Does not own caged pets"
+      },
+      "has_no_children": {
+        "category": "advanced_sitter_info",
+        "category_rank": 4,
+        "icon": "filter-has_no_children",
+        "category_display_name": "Sitter Info",
+        "required": false,
+        "type": "boolean",
+        "label": "Has no children"
+      },
+      "no_children_0_5": {
+        "category": "children_in_the_home",
+        "category_rank": 6,
+        "icon": "filter-no_children_0_5",
+        "category_display_name": "Children in the home",
+        "required": false,
+        "type": "boolean",
+        "rank": 1,
+        "label": "No children 0-5 years old"
+      },
+      "no_children_6_12": {
+        "category": "children_in_the_home",
+        "category_rank": 6,
+        "icon": "filter-no_children_6_12",
+        "category_display_name": "Children in the home",
+        "required": false,
+        "type": "boolean",
+        "rank": 2,
+        "label": "No children 6-12 years old"
+      },
+      "has_house": {
+        "category": "housing_conditions",
+        "category_rank": 7,
+        "icon": "filter-has_house",
+        "category_display_name": "Housing conditions",
+        "required": false,
+        "type": "boolean",
+        "rank": 1,
+        "label": "Has house (excludes apartments)"
+      },
+      "knows_first_aid": {
+        "category": "housing_conditions",
+        "category_rank": 7,
+        "icon": "filter-knows_first_aid",
+        "category_display_name": "Housing conditions",
+        "required": false,
+        "type": "boolean",
+        "rank": 3,
+        "label": "Dog first-aid certified"
+      },
+      "dogs_allowed_on_furniture": {
+        "category": "housing_conditions",
+        "category_rank": 7,
+        "icon": "filter-dogs_allowed_on_furniture",
+        "category_display_name": "Housing conditions",
+        "required": false,
+        "type": "boolean",
+        "rank": 5,
+        "label": "Dogs allowed on furniture"
+      },
+      "has_fenced_yard": {
+        "category": "housing_conditions",
+        "category_rank": 7,
+        "icon": "filter-has_fenced_yard",
+        "category_display_name": "Housing conditions",
+        "required": false,
+        "type": "boolean",
+        "rank": 2,
+        "label": "Has fenced yard"
+      },
+      "dogs_allowed_on_bed": {
+        "category": "housing_conditions",
+        "category_rank": 7,
+        "icon": "filter-dogs_allowed_on_bed",
+        "category_display_name": "Housing conditions",
+        "required": false,
+        "type": "boolean",
+        "rank": 4,
+        "label": "Dogs allowed on bed"
+      },
+      "non_smoking": {
+        "category": "housing_conditions",
+        "category_rank": 7,
+        "icon": "filter-non_smoking",
+        "category_display_name": "Housing conditions",
+        "required": false,
+        "type": "boolean",
+        "rank": 6,
+        "label": "Non-smoking home"
+      },
+      "volunteer_donor": {
+        "category": "organizations",
+        "category_rank": 8,
+        "icon": "filter-volunteer_donor",
+        "category_display_name": "Organizations",
+        "required": false,
+        "type": "boolean",
+        "rank": 1,
+        "label": "Volunteer / Donor"
+      },
+      "apse": {
+        "category": "organizations",
+        "category_rank": 8,
+        "icon": "filter-apse",
+        "category_display_name": "Organizations",
+        "required": false,
+        "type": "boolean",
+        "rank": 3,
+        "label": "APSE member"
+      },
+      "petsitusa": {
+        "category": "organizations",
+        "category_rank": 8,
+        "icon": "filter-petsitusa",
+        "category_display_name": "Organizations",
+        "required": false,
+        "type": "boolean",
+        "rank": 2,
+        "label": "PetsitUSA member"
+      },
+      "cat_care": {
+        "category": "advanced_services",
+        "category_rank": 9,
+        "icon": "filter-cat_care",
+        "category_display_name": "Services",
+        "required": false,
+        "type": "boolean",
+        "rank": 1,
+        "label": "Cat care"
+      },
+      "puppy": {
+        "category": "advanced_services",
+        "category_rank": 9,
+        "icon": "filter-puppy",
+        "category_display_name": "Services",
+        "required": false,
+        "type": "boolean",
+        "rank": 2,
+        "label": "Puppy care"
+      },
+      "senior_dog_care": {
+        "category": "advanced_services",
+        "category_rank": 9,
+        "icon": "filter-senior_dog_care",
+        "category_display_name": "Services",
+        "required": false,
+        "type": "boolean",
+        "rank": 3,
+        "label": "Senior dog care"
+      },
+      "is_premier": {
+        "category": "advanced_services",
+        "category_rank": 9,
+        "icon": "filter-is_premier",
+        "category_display_name": "Services",
+        "required": false,
+        "type": "boolean",
+        "rank": 4,
+        "label": "RoverGO"
+      },
+      "bathing_grooming": {
+        "category": "advanced_services",
+        "category_rank": 9,
+        "icon": "filter-bathing_grooming",
+        "category_display_name": "Services",
+        "required": false,
+        "type": "boolean",
+        "rank": 5,
+        "label": "Bathing / Grooming"
+      },
+      "test_key_no_category_rank": {
+        "category": "detail",
+        "category_display_name": "Detail",
+        "required": false,
+        "type": "boolean",
+        "rank": 6,
+        "label": "Test No Category Rank"
+      },
+      "test_key_no_category_display_name": {
+        "category": "detail",
+        "category_rank": 9,
+        "required": false,
+        "type": "boolean",
+        "rank": 7,
+        "label": "Test No Category Display Name"
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`search reducer when a field value changes returns the correct state 1`] = `
+Object {
+  "inputs": Object {
+    "test-key": "test-value",
+  },
+  "searchType": "overnight-boarding",
+}
+`;
+
+exports[`search reducer when passed no previous state returns the correct initial state 1`] = `
+Object {
+  "inputs": Object {},
+  "latitude": 47.6843725,
+  "longitude": -122.3874837,
+  "searchType": "overnight-boarding",
+}
+`;
+
+exports[`search reducer when the search type changes returns the correct state 1`] = `
+Object {
+  "inputs": Object {},
+  "latitude": 47.6843725,
+  "longitude": -122.3874837,
+  "searchType": "overnight-boarding",
+}
+`;

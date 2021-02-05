@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchOptionInteger renders correctly 1`] = `
+<div
+  className="form-group"
+>
+  <label
+    htmlFor="test-option-key"
+  >
+    <small>
+      test-label
+    </small>
+  </label>
+  <ComponentWrapper
+    defaultValue={1}
+    handleStyle={
+      Array [
+        Object {},
+      ]
+    }
+    onChange={[Function]}
+    step={1}
+    tipFormatter={[Function]}
+    tipProps={Object {}}
+    value={42}
+  />
+</div>
+`;

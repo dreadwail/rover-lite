@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchTypes when fetching displays a loading spinner 1`] = `<Spinner />`;
+
+exports[`SearchTypes when fetching failed displays an error message with an option to reload 1`] = `<ReloadableFailure />`;
+
+exports[`SearchTypes when fetching succeeded renders correctly 1`] = `
+<div
+  className="form-group"
+>
+  <label
+    htmlFor="service-type"
+  >
+    Service Type
+  </label>
+  <select
+    className="form-control"
+    id="service-type"
+    onChange={[Function]}
+    value="overnight-boarding"
+  >
+    <option
+      key="overnight-traveling"
+      value="overnight-traveling"
+    >
+      House Sitting
+    </option>
+    <option
+      key="dog-walking"
+      value="dog-walking"
+    >
+      Dog Walking
+    </option>
+  </select>
+</div>
+`;

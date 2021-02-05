@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`search options selectors .getOptionsByCategoryId when there are options returns the expected options 1`] = `
+Object {
+  "provider_skills": Object {
+    "end_date": Object {
+      "category": Object {
+        "categoryId": "provider_skills",
+        "displayName": "Provider Skills",
+        "rank": 2,
+      },
+      "helpText": "The date of the pick-up from the sitter's location",
+      "label": "Pick Up",
+      "rank": 2,
+      "required": false,
+      "type": "date",
+    },
+  },
+  "service_details": Object {
+    "start_date": Object {
+      "category": Object {
+        "categoryId": "service_details",
+        "displayName": "Service Details",
+        "rank": 1,
+      },
+      "helpText": "The date of the drop-off at the sitter's location",
+      "label": "Drop Off",
+      "rank": 1,
+      "required": false,
+      "type": "date",
+    },
+  },
+}
+`;
+
+exports[`search options selectors .getRankedCategories when there are options returns the categories ordered by their rank 1`] = `
+Array [
+  Object {
+    "categoryId": "provider_skills",
+    "displayName": "Provider Skills",
+    "rank": 2,
+  },
+  Object {
+    "categoryId": "service_details",
+    "displayName": "Service Details",
+    "rank": 9,
+  },
+]
+`;

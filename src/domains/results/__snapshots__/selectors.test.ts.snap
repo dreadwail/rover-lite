@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`results selectors .getListings returns the current listings 1`] = `
+Array [
+  Object {
+    "badges": Array [],
+    "city": "Seattle",
+    "currencySymbol": "$",
+    "featuredReview": "d",
+    "name": "b",
+    "neighborhood": "Ballard",
+    "price": 42,
+    "priceUnit": "night",
+    "rank": 0,
+    "ratingAverage": 4.5,
+    "repeatClientCount": 3,
+    "reviewCount": 4,
+    "state": "WA",
+    "tagline": "c",
+    "thumbnailUrl": "a",
+    "webUrl": "e",
+    "zip": "98117",
+  },
+]
+`;

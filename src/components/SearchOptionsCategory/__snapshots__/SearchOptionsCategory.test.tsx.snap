@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchOptionsCategory for a non-detail category renders correctly 1`] = `
+<Fragment>
+  <span
+    className="form-text border-bottom text-secondary mb-2"
+  >
+    <button
+      className="btn btn-link pl-0"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+      type="button"
+    >
+      <small
+        className="text-muted"
+      >
+        ▶
+      </small>
+       
+      <span
+        className="text-secondary"
+      >
+        Test Category
+      </span>
+    </button>
+  </span>
+  <div
+    className="collapse"
+  />
+</Fragment>
+`;
+
+exports[`SearchOptionsCategory for the detail category renders correctly 1`] = `
+<Fragment>
+  <span
+    className="form-text border-bottom text-secondary mb-2"
+  >
+    <button
+      className="btn btn-link pl-0"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+      type="button"
+    >
+      <small
+        className="text-muted"
+      >
+        ▼
+      </small>
+       
+      <span
+        className="text-secondary"
+      >
+        Detail
+      </span>
+    </button>
+  </span>
+  <div
+    className="collapse.show"
+  />
+</Fragment>
+`;
+
+exports[`SearchOptionsCategory when collapsed when clicking to expand expands the category 1`] = `
+<Fragment>
+  <span
+    className="form-text border-bottom text-secondary mb-2"
+  >
+    <button
+      className="btn btn-link pl-0"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+      type="button"
+    >
+      <small
+        className="text-muted"
+      >
+        ▼
+      </small>
+       
+      <span
+        className="text-secondary"
+      >
+        Test Category
+      </span>
+    </button>
+  </span>
+  <div
+    className="collapse.show"
+  />
+</Fragment>
+`;
+
+exports[`SearchOptionsCategory when expanded when clicking to collapse collapses the category 1`] = `
+<Fragment>
+  <span
+    className="form-text border-bottom text-secondary mb-2"
+  >
+    <button
+      className="btn btn-link pl-0"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+      type="button"
+    >
+      <small
+        className="text-muted"
+      >
+        ▶
+      </small>
+       
+      <span
+        className="text-secondary"
+      >
+        Test Category
+      </span>
+    </button>
+  </span>
+  <div
+    className="collapse"
+  />
+</Fragment>
+`;

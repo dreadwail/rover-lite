@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`search types reducer when fetching search types fails returns the correct state 1`] = `
+Object {
+  "endpoints": Object {},
+  "hasFailed": true,
+  "isFetching": false,
+}
+`;
+
+exports[`search types reducer when fetching search types starts returns the correct state 1`] = `
+Object {
+  "endpoints": Object {},
+  "hasFailed": false,
+  "isFetching": true,
+}
+`;
+
+exports[`search types reducer when fetching search types succeeds returns the correct state 1`] = `
+Object {
+  "endpoints": Object {
+    "overnight-boarding": "https://www.rover.com/api/v3/search/overnight-boarding/",
+  },
+  "hasFailed": false,
+  "isFetching": false,
+}
+`;
+
+exports[`search types reducer when passed no previous state returns the correct initial state 1`] = `
+Object {
+  "endpoints": Object {},
+  "hasFailed": false,
+  "isFetching": false,
+}
+`;

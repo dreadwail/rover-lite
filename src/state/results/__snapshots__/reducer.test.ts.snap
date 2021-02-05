@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`results reducer when a search field changes returns the correct state 1`] = `
+Object {
+  "hasFailed": false,
+  "isFetching": false,
+  "isStale": true,
+  "listings": Array [],
+}
+`;
+
+exports[`results reducer when fetching results fails returns the correct state 1`] = `
+Object {
+  "hasFailed": true,
+  "isFetching": false,
+  "isStale": false,
+  "listings": Array [],
+}
+`;
+
+exports[`results reducer when fetching results starts returns the correct state 1`] = `
+Object {
+  "hasFailed": false,
+  "isFetching": true,
+  "isStale": false,
+  "listings": Array [],
+}
+`;
+
+exports[`results reducer when fetching results succeeds returns the correct state 1`] = `
+Object {
+  "hasFailed": false,
+  "isFetching": false,
+  "isStale": false,
+  "listings": Array [
+    Object {
+      "badges": Array [
+        Object {
+          "content": "This sitter is Certified as Awesome.",
+          "imageUrl": "https://example.com/badge.png",
+          "title": "Certified Awesome",
+        },
+      ],
+      "city": "Seattle",
+      "currencySymbol": "$",
+      "featuredReview": "This sitter is awesome.",
+      "name": "Test Name",
+      "neighborhood": "Ballard",
+      "price": 42.12,
+      "priceUnit": "night",
+      "rank": 0,
+      "ratingAverage": 4.8,
+      "repeatClientCount": 42,
+      "reviewCount": 12,
+      "state": "WA",
+      "tagline": "Enthusiastic dog lover in Ballard.",
+      "thumbnailUrl": "https://example.com/profile.png",
+      "webUrl": "https://www.rover.com/members/not-a-real-profile-just-a-test/",
+      "zip": "98117",
+    },
+  ],
+}
+`;
+
+exports[`results reducer when passed no previous state returns the correct initial state 1`] = `
+Object {
+  "hasFailed": false,
+  "isFetching": false,
+  "isStale": true,
+  "listings": Array [],
+}
+`;
+
+exports[`results reducer when the search type changes returns the correct state 1`] = `
+Object {
+  "hasFailed": false,
+  "isFetching": false,
+  "isStale": true,
+  "listings": Array [],
+}
+`;

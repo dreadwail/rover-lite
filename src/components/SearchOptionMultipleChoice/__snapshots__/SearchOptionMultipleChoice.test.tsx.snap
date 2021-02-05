@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchOptionMultipleChoice when there is a value renders correctly 1`] = `
+<div
+  className="form-group"
+>
+  <label
+    htmlFor="test-option-key"
+  >
+    <small>
+      test-label
+    </small>
+  </label>
+  <div
+    className="form-check"
+    key="test-option-key-test-choice-1"
+  >
+    <input
+      checked={true}
+      className="form-check-input"
+      id="test-option-key"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <label
+      className="form-check-label"
+      htmlFor="test-option-key-test-choice-1"
+    >
+      Test Choice 1
+    </label>
+  </div>
+  <div
+    className="form-check"
+    key="test-option-key-test-choice-2"
+  >
+    <input
+      checked={true}
+      className="form-check-input"
+      id="test-option-key"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <label
+      className="form-check-label"
+      htmlFor="test-option-key-test-choice-2"
+    >
+      Test Choice 2
+    </label>
+  </div>
+  <div
+    className="form-check"
+    key="test-option-key-test-choice-3"
+  >
+    <input
+      checked={false}
+      className="form-check-input"
+      id="test-option-key"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <label
+      className="form-check-label"
+      htmlFor="test-option-key-test-choice-3"
+    >
+      Test Choice 3
+    </label>
+  </div>
+</div>
+`;
+
+exports[`SearchOptionMultipleChoice when there is no value yet renders correctly 1`] = `
+<div
+  className="form-group"
+>
+  <label
+    htmlFor="test-option-key"
+  >
+    <small>
+      test-label
+    </small>
+  </label>
+  <div
+    className="form-check"
+    key="test-option-key-test-choice-1"
+  >
+    <input
+      checked={false}
+      className="form-check-input"
+      id="test-option-key"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <label
+      className="form-check-label"
+      htmlFor="test-option-key-test-choice-1"
+    >
+      Test Choice 1
+    </label>
+  </div>
+  <div
+    className="form-check"
+    key="test-option-key-test-choice-2"
+  >
+    <input
+      checked={false}
+      className="form-check-input"
+      id="test-option-key"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <label
+      className="form-check-label"
+      htmlFor="test-option-key-test-choice-2"
+    >
+      Test Choice 2
+    </label>
+  </div>
+  <div
+    className="form-check"
+    key="test-option-key-test-choice-3"
+  >
+    <input
+      checked={false}
+      className="form-check-input"
+      id="test-option-key"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <label
+      className="form-check-label"
+      htmlFor="test-option-key-test-choice-3"
+    >
+      Test Choice 3
+    </label>
+  </div>
+</div>
+`;

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`debouncedThunk when dispatching multiple actions in quick succession has the correct action in the store 1`] = `
+Array [
+  Object {
+    "type": "TEST_ACTION",
+  },
+]
+`;

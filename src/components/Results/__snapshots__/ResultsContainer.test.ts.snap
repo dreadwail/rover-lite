@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchOptionsContainer .mapStateToProps returns the correctly mapped props 1`] = `
+Object {
+  "hasFailed": false,
+  "isFetching": false,
+  "isStale": false,
+  "listings": Array [],
+}
+`;

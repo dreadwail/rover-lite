@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`search options actions .fetchSearchOptions when the search type has loaded when the api call fails dispatches the correct actions 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "searchType": "overnight-boarding",
+    },
+    "type": "FETCH_SEARCH_OPTIONS.PENDING",
+  },
+  Object {
+    "error": true,
+    "payload": Object {
+      "error": [Error: bang],
+      "searchType": "overnight-boarding",
+    },
+    "type": "FETCH_SEARCH_OPTIONS.REJECTED",
+  },
+]
+`;
+
+exports[`search options actions .fetchSearchOptions when the search type has loaded when the api call succeeds dispatches the correct actions 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "searchType": "overnight-boarding",
+    },
+    "type": "FETCH_SEARCH_OPTIONS.PENDING",
+  },
+  Object {
+    "payload": Object {
+      "options": Object {
+        "start_date": Object {
+          "category": Object {
+            "categoryId": "service_details",
+            "displayName": "Service Details",
+            "rank": 1,
+          },
+          "helpText": "The date of the drop-off at the sitter's location",
+          "label": "Drop Off",
+          "rank": 1,
+          "required": false,
+          "type": "date",
+        },
+      },
+      "searchType": "overnight-boarding",
+    },
+    "type": "FETCH_SEARCH_OPTIONS.FULFILLED",
+  },
+]
+`;
